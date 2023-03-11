@@ -25,8 +25,17 @@ Este proyecto utiliza Terraform para el despliegue en la región de Irlanda de u
     ```
     terraform apply
     ```
+5. Al final del mismo, aparecerán los outputs configurados. Copiar el enlace del website_endpoint en el navegador para acceder al sitio Web:
 
-5. Una vez realizada la actividad, recomendamos la eliminación de los recursos generados:
+   ```
+   Outputs:
+
+   s3_first_bucket_arn = "arn:aws:s3:::kc-bucket-om"
+   s3_first_bucket_name = "kc-bucket-om"
+   website_endpoint = "kc-bucket-om.s3-website-eu-west-1.amazonaws.com"  <<<<
+   ```
+
+6. Una vez realizada la actividad, recomendamos la eliminación de los recursos generados:
 
    ```
    terraform destroy
